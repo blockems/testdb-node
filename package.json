@@ -1,28 +1,17 @@
 {
-  "name": "test-db",
+  "name": "testdb-node",
   "version": "0.0.0",
-  "description": "testing nade access",
-  "main": "index.js",
-  "directories": {
-    "test": "test"
-  },
+  "private": true,
   "scripts": {
-    "test": "mocha -R spec-xunit-file"
+    "start": "node ./bin/www"
   },
-  "author": "Bruce Lock",
-  "license": "ISC",
   "dependencies": {
-    "agentkeepalive": "^2.2.0",
-    "express": "^4.16.3"
-  },
-  "devDependencies": {
-    "angular": "^1.7.2",
-    "chai": "^3.5.0",
-    "isbinaryfile": "^3.0.2",
-    "mocha": "^2.5.3",
-    "should": "^13.2.1",
-    "spec-xunit-file": "0.0.1-3",
-    "superagent": "^1.8.5",
-    "supertest": "^1.2.0"
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "ejs": "~2.5.7",
+    "express": "~4.16.0",
+    "http-errors": "~1.6.2",
+    "less-middleware": "~2.2.1",
+    "morgan": "~1.9.0"
   }
 }
